@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Dependent";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="row">
+    <div class="col-md-6">
+        <section>
+            <form id="account" method="post">
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Surname"></label>
+                    <input asp-for="Surname" class="form-control" />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Id Number"></label>
+                    <input asp-for="Id Number" class="form-control" />
+                    <span asp-validation-for="Id Number" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cell Number"></label>
+                    <input asp-for="Cell Number" class="form-control" />
+                    <span asp-validation-for="Cell Number" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email Address"></label>
+                    <input asp-for="Email Address" class="form-control" />
+                    <span asp-validation-for="Email Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Residential Address"></label>
+                    <input asp-for="Residential Address" class="form-control" />
+                    <span asp-validation-for="Residential Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Medical Aid"></label>
+                    <input asp-for="Medical Aid" class="form-control" />
+                    <span asp-validation-for="Medical Aid" class="text-danger"></span>
+                </div>
+                 <div class="form-group">
+                    <label asp-for="Person Responsible For Account"></label>
+                    <input asp-for="Person Responsible For Account" class="form-control" />
+                    <span asp-validation-for="Person Responsible For Account" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+</div>
+}
